@@ -1,0 +1,8 @@
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\obj\Debug\ChartBaseHandler.csprojResolveAssemblyReference.cache
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\bin\Debug\ChartBaseHandler.dll
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\bin\Debug\ChartBaseHandler.pdb
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\bin\Debug\CSharper.dll
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\bin\Debug\CSharper.pdb
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\bin\Debug\CSharper.xml
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\obj\Debug\ChartBaseHandler.dll
+C:\Users\Virgil\Source\Repos\TTL\ChartBaseHandler\ChartBaseHandler\obj\Debug\ChartBaseHandler.pdb

@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharper</name>
+    </assembly>
+    <members>
+        <member name="M:CSharper.ComparableSharper.Between``1(``0,``0,``0)">
+            <see cref="!:http://stackoverflow.com/a/271444/821054"/>
+        </member>
+        <member name="M:CSharper.DateTimeSharper.IsWeekend(System.DateTime)">
+            <summary>
+            Lets you easily figure out ifdateTime holds a date value that is a weekend.
+            </summary>
+            <param name="date">The date to be verified</param>
+            <returns>true if the date is Saturday or Sunday; false otherwise</returns>
+            <see cref="!:http://extensionmethod.net/csharp/datetime/isweekend"/>
+        </member>
+        <member name="M:CSharper.EnumSharper.EnumParse``1(System.String,System.Boolean)">
+            <summary>
+            Parses a string into an Enum
+            </summary>
+            <typeparam name="T">The type of the Enum</typeparam>
+            <param name="value">String value to parse</param>
+            <returns>The Enum corresponding to the stringExtensions</returns>
+            <see cref="!:http://stackoverflow.com/a/271421/821054"/>
+        </member>
+        <member name="M:CSharper.ExceptionSharper.ThrowIfArgIsNull``1(``0,System.String)">
+            <summary>
+            Throws an exception if the object called upon is null.
+            </summary>
+            <typeparam name="T">The calling class</typeparam>
+            <param name="obj">The This object</param>
+            <param name="paramName">The name of the parameter that caused the exception.</param>
+        </member>
+        <member name="M:CSharper.ExceptionSharper.ThrowIfArgIsNull``1(``0,System.String,System.String)">
+            <summary>
+            Throws an exception if the object called upon is null.
+            </summary>
+            <typeparam name="T">The calling class</typeparam>
+            <param name="obj">The This object</param>
+            <param name="paramName">The name of the parameter that caused the exception.</param>
+            /// <param name="message">A message that describes the error.</param>
+        </member>
+        <member name="M:CSharper.IDictionarySharper.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            Gets the value associated with the specified key, or default value, if key not present
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="dict">The dictionary in wich the method is going to be executed on</param>
+            <param name="key">The key whose value to get.</param>
+            <param name="defValue">The value to be returne when the key is not found</param>
+            <returns>the value associated with the specified key, if the key is found; otherwise, the default value passed as parameter</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:CSharper.IDictionarySharper.SafeAdd``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)" -->
+        <member name="M:CSharper.ObjectSharper.In``1(``0,``0[])">
+            <summary>
+            Determines whether a sequence contains a specified element by using the default equality comparer. 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value to locate in the sequence.</param>
+            <param name="source">A sequence in which to locate a value.</param>
+            <seealso cref="!:http://stackoverflow.com/a/833477/821054"/>
+            <returns> true if the source sequence contains an element that has the specified value; otherwise, false.</returns>
+        </member>
+        <member name="M:CSharper.ObjectSharper.In``1(``0,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether a sequence contains a specified element by using the default equality comparer. 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value">The value to locate in the sequence.</param>
+            <param name="source">A sequence in which to locate a value.</param>
+            <seealso cref="!:http://stackoverflow.com/a/833477/821054"/>
+            <returns> true if the source sequence contains an element that has the specified value; otherwise, false.</returns>
+        </member>
+        <member name="M:CSharper.ObjectSharper.TrySet(System.Object,System.String,System.Object)">
+            <summary>
+            Try to set the value of the property or field, if the property of field existis in the object
+            </summary>
+            <param name="obj">Object in wich the property of field value will be setted</param>
+            <param name="memberName">Name of property of field</param>
+            <param name="value">Value that will be setted if property of field exsists</param>
+            <returns>Returns the original object</returns>
+            <exception cref="!:Syste.ArgumentException">Value cannot be converted to property or field appropriate type</exception>
+        </member>
+        <member name="M:CSharper.RandomSharper.Shuffle``1(System.Random,``0[])">
+            <summary>
+            Shuffles the IEnumerable using Fisher-Yates 
+            </summary>
+            <typeparam name="T">Type of the IEnumerable</typeparam>
+            <param name="rnd">Random to use in the Shuffling</param>
+            <param name="source">IEnumerable that's going to be shuffled</param>
+            <returns>return a shuffled IEnumerble with the contet of the original IEnumerable</returns>
+            <see cref="!:http://stackoverflow.com/a/2016298/821054"/>
+        </member>
+        <member name="M:CSharper.RandomSharper.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)">
+            <summary>
+            Shuffles the IEnumerable using Fisher-Yates 
+            </summary>
+            <typeparam name="T">Type of the IEnumerable</typeparam>
+            <param name="source">IEnumerable that's going to be shuffled</param>
+            <param name="rnd">Random to use in the Shuffling</param>
+            <returns>return a shuffled IEnumerble with the contet of the original IEnumerable</returns>
+            <see cref="!:http://stackoverflow.com/a/2016298/821054"/>
+        </member>
+        <member name="M:CSharper.StringSharper.F(System.String,System.Object[])">
+            <summary>
+            Formats a string with a list of literal placeholders.
+            </summary>
+            <param name="text">The extension text</param>
+            <param name="args">The argument list</param>
+            <returns>The formatted string</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.F(System.String,System.IFormatProvider,System.Object[])">
+            <summary>
+            Formats a string with a list of literal placeholders.
+            </summary>
+            <param name="text">The extension text</param>
+            <param name="provider">The format provider</param>
+            <param name="args">The argument list</param>
+            <returns>The formatted string</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.Truncate(System.String,System.Int32,System.String)">
+            <summary>
+            Truncates the string to a specified length and replace the truncated to the suffix (default = "...")
+            </summary>
+            <param name="maxLength">total length of characters to maintain before the truncate happens</param>
+            <returns>truncated string</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.IsNull(System.String)">
+            <summary>
+            Indicates whether the specified string is null.
+            </summary>
+            <param name="value">The string to test.</param>
+            <returns>true if the value parameter is null; otherwise, false.</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.IsEmpty(System.String)">
+            <summary>
+            Indicates whether the specified string is null or an System.String.Empty string.
+            </summary>
+            <param name="value">The string to test.</param>
+            <returns>true if the value parameter is null or an empty string (""); otherwise, false.</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.IsWhiteSpaces(System.String)">
+            <summary>
+            Indicates whether a specified string is null, empty, or consists only of white-space characters.
+            </summary>
+            <param name="value">The string to test.</param>
+            <returns>true if the value parameter is null or System.String.Empty, or if value consists exclusively of white-space characters.</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.ReplaceAnyOf(System.String,System.Collections.Generic.IEnumerable{System.Char},System.String)">
+            <summary>
+            Replaces all occurrences of a each char in the specified IEnumerable in this instance, with the specified System.String.
+            </summary>
+            <param name="oString"></param>
+            <param name="oldChars">A char IEnumerable of each char to be replaced.</param>
+            <param name="newValue">A System.String to replace each char of oldChars.</param>
+            <returns>A System.String equivalent to this instance but with all chars of oldValue replaced with newValue.</returns>
+        </member>
+        <member name="M:CSharper.StringSharper.ReplaceAnyOf(System.String,System.String,System.String)">
+            <summary>
+            Replaces all occurrences of a each char in the specified System.String in this instance, with the specified System.String.
+            </summary>
+            <param name="oString"></param>
+            <param name="oldChars">A string in wich each char will be replaced.</param>
+            <param name="newValue">A System.String to replace each char of oldChars.</param>
+            <returns>A System.String equivalent to this instance but with all chars of oldValue replaced with newValue.</returns>
+        </member>
+    </members>
+</doc>
